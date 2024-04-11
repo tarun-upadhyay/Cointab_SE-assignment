@@ -16,7 +16,7 @@ const AllUser = () => {
   async function getUserData() {
     setLoading(true);
     try {
-      const response = await axios.get("https://cointab-se-assignment-mr3g.onrender.com/users");
+      const response = await axios.get("/api/users");
       if (response.status !== 200) {
         throw new Error(`HTTP error! Status: ${response.status}`);
       }
@@ -34,7 +34,7 @@ const AllUser = () => {
     setButtonLoading(true);
     try {
       const response = await axios.patch(
-        `http://localhost:5000/users/update/${id}`,
+        `/api/users/update/${id}`,
         {
           // Add your update data here
         }

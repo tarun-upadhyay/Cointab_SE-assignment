@@ -4,7 +4,7 @@ const nextConfig = {
     return [
       {
         source: "/api/:path*",
-        destination: "https://cointab-se-assignment-mr3g.onrender.com/api",
+        destination: "https://cointab-se-assignment-mr3g.onrender.com/api/:path*",
       },
     ];
   },

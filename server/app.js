@@ -17,10 +17,10 @@ const errorHandlerMiddleware = require("./Middlewares/error-handler");
 
 const app = express();
 var corsOptions = {
-  origin: "http://localhost:3000",
+  origin: "https://cointab-ass-zeta.vercel.app",
   optionsSuccessStatus: 200,
 };
-app.use(cors(corsOptions));
+app.use(cors())
 app.set("trust proxy", 1);
 
 app.use(helmet());

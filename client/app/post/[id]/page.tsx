@@ -3,7 +3,6 @@ import BulkDownld from "@/app/Components/Post/BulkDownld";
 import PostCard from "@/app/Components/Post/PostCard";
 import { ToastContainer, toast } from "react-toastify";
 
-
 import Button from "@/ui-components/Button";
 import axios from "axios";
 import { Metadata } from "next";
@@ -21,7 +20,7 @@ const Post = ({ params }: { params: { id: string } }) => {
     (async () => {
       setLoading(true);
       try {
-        const response = await axios.get(`http://localhost:5000/posts/${id}`);
+        const response = await axios.get(`/api/posts/${id}`);
         const userResponse = await axios.get(
           `https://jsonplaceholder.typicode.com/users?id=${id}`
         );
@@ -43,7 +42,7 @@ const Post = ({ params }: { params: { id: string } }) => {
 
   async function handleBulkAdd() {
     try {
-      const response = await axios.post(`http://localhost:5000/posts`, {
+      const response = await axios.post(`/api/posts`, {
         data,
       });
       setIsAddedDb(true);
@@ -55,12 +54,9 @@ const Post = ({ params }: { params: { id: string } }) => {
   }
   const handleExcelDownload = async () => {
     try {
-      const response = await axios.get(
-        `http://localhost:5000/posts/excelDownload/${id}`,
-        {
-          responseType: "blob", // Important for handling binary data
-        }
-      );
+      const response = await axios.get(`/api/posts/excelDownload/${id}`, {
+        responseType: "blob", // Important for handling binary data
+      });
 
       // Create a Blob from the binary data
       const blob = new Blob([response.data], {
