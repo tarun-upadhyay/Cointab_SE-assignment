@@ -16,7 +16,7 @@ MongoDB, Expressjs, React/Redux, Nodejs
    </a>
 </p>
 
-> MERN app,Tech Stacks-> MongoDB, Expressjs, React,NextJs, TailwindCss, Github, Nodejs.
+> MERN app,Tech Stacks-> MongoDB, Expressjs, React,NextJs, TailwindCss, Github, Nodejs, TypeScript.
 # Cointab SE-ASSIGNMENT Full Stack Coding Assignment
 
 ---
