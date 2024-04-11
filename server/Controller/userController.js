@@ -63,7 +63,7 @@ const updateUser = async (req, res) => {
       .status(StatusCodes.INTERNAL_SERVER_ERROR)
       .json({ error: "Facing issue while  fetching json placeholder API" });
   }
-  return res.status(StatusCodes.ACCEPTED).json({ userId });
+ 
 };
 
 module.exports = { getUserData, updateUser };

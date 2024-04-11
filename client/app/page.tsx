@@ -26,7 +26,7 @@ export default function Home() {
       </div>
 
       {/* User Section */}
-      <section className="mt-10 w-[90%] md:w-[70%] mx-auto my-16 relative">
+      <section className="mt-10 w-[95%] md:w-[70%] mx-auto my-16 relative">
         <AllUser />
       </section>
     </main>
