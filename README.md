@@ -21,7 +21,7 @@ MongoDB, Expressjs, React/Redux, Nodejs
 
 ---
 
-This User based Website project represents a robust platform that integrates backend and frontend technologies to offer a seamless online user details experience. Leveraging Node.js for the backend, Next.js14 for the frontend, and MongoDB for the database, this application encompasses a comprehensive set of functionalities. managers.
+This User based Website project represents a robust platform that integrates backend and frontend technologies to offer a seamless online user details experience. Leveraging Node.js for the backend, Next.js14 for the frontend, and MongoDB for the database, this application encompasses a comprehensive set of functionalities.
 
 ---
 
