@@ -35,8 +35,8 @@ app.get("/", (req, res) => {
   res.send(`<h1>Backend api</h1>`);
 });
 
-app.use("/users", userRouter);
-app.use("/posts", postRouter);
+app.use("/api/users", userRouter);
+app.use("/api/posts", postRouter);
 
 app.use(notFoundMiddleware);
 app.use(errorHandlerMiddleware);

@@ -16,7 +16,7 @@ const AllUser = () => {
   async function getUserData() {
     setLoading(true);
     try {
-      const response = await axios.get("http://localhost:5000/users");
+      const response = await axios.get("https://cointab-se-assignment-mr3g.onrender.com/users");
       if (response.status !== 200) {
         throw new Error(`HTTP error! Status: ${response.status}`);
       }
